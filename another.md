@@ -4,3 +4,5 @@
 # This is heading 1
 ## This is heading 2
 [This is a link to my first file](https://adam-dabet.github.io/cse15l-lab-reports/)
+
+![image](lab.png)
