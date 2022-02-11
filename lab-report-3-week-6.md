@@ -7,12 +7,13 @@ First you have to write the command to copy the markdown-parse directory.
 ```
 scp -r . cs15lwi22'''@ieng6.ucsd.edu:~/markdown-parse
 ```
+The -r means it will copy recursively. The ~/markdown-parse tells scp to create the markdown-parse directory on the ieng6, and then copy the contents of the directory recursively there.
 
 ![image](copy.png)
 
 
 
-Now you can log into your ieng6 account with ```ssh``` and run the tests for a repository.
+Now you can log into your ieng6 account with ```ssh``` and run the tests for a repository using javac and java.
 
 ![image](run-tests.png)
 
