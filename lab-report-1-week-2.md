@@ -22,7 +22,7 @@ ssh cs15lwi22"""@ieng6.ucsd.edu
 ```
 It will ask you to type in your password, but after that you are logged into the ieng6. This is what it should look like.
 
-![image](ssh.png
+![image](ssh.png)
 
 ---
 
