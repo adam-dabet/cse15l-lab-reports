@@ -10,7 +10,7 @@ The command prints out all the differences between results.txt of my markdown-pa
 
 1st Difference found in:
    
-    test-files/201.md
+test-files/201.md
 
 
 ![image](markdown.png)
@@ -27,6 +27,20 @@ I believe this should return an empty list because there are some characters bet
 ![image](bug.png)
 The bug is that the code doesn't check if there are characters in between the close bracket and the open parenthesis, so an extra condition should be added in the if statement before adding the link.
 
+
 2nd Difference found in:
 
+test-files/495.md
 
+![image](expected.png)
+
+This is the output in my markdown-parse file vs the professors.
+
+The files contents were:
+```
+[link](foo(and(bar)))
+```
+
+This should return  '[foo(and(bar))]' , so my implementation of markdown-parse is causing a bug.
+![image](bug10.png)
+The bug in my code is that I break the loop if nextOpenBracket is the first character and never add the link. Removing this if statement should fix my bug.
